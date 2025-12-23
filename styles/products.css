@@ -1,0 +1,38 @@
+/* .box {
+    text-decoration: none;
+    color: inherit;
+}
+.box{
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.box p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.5rem;
+}
+.box h2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.box img{
+ width: 70px;
+ height: 70px;
+ border-radius: 50%;
+ object-fit: cover;   
+}
+.bx{
+    color: rgb(22, 2, 90);
+}
+.box:hover{
+    background-color: var(--secondary-color);
+    transform: scale(105%);
+    transition: 1s all linear;
+} */
+
+.header-container {
+    padding: 5px;
+    margin: 5px;
+};
