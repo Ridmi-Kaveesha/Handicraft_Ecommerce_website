@@ -1,210 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handicraft Portal</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>handicraft website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Fonts (Calm + Premium) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
-<body>
-    <!--Navbar-->
-    <header>
-        <a href="#" class="logo">
-            <img src="Newlogoweb.jpg" alt="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="site-header" id="top">
+      <div class="container header-row">
+        <a href="#home" class="logo" aria-label="Handicraft Portal">
+          <img src="HandiCraft portal logo design.png" alt="Handicraft Portal logo" />
+          <span class="logo-text">Handicraft Portal</span>
         </a>
-        <!--menu icon-->
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <!--links-->
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#customer">Customer</a></li>
-        </ul>
-        <!--icons-->
+
+        <nav class="nav" aria-label="Main navigation">
+          <button
+            class="icon-btn menu-btn"
+            id="menu-icon"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="main-nav"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <ul class="navbar" id="main-nav">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About Us</a></li>
+            <li><a class="nav-link" href="#products">Products</a></li>
+            <li><a class="nav-link" href="#customer">Customer</a></li>
+          </ul>
+        </nav>
+
         <div class="header-icon">
-            <a href="cart.html"><i class='bx bx-cart'></i></a>
-            <i class='bx bx-search-alt-2' id="search-icon"></i>
-            <a href="Registration.php"><i class='bx bx-user'></i></a>
+          <a class="icon-btn" href="cart.html" aria-label="Cart"><i class="bx bx-cart"></i></a>
+
+          <button
+            class="icon-btn"
+            id="search-icon"
+            type="button"
+            aria-label="Open search"
+            aria-controls="search-box"
+            aria-expanded="false"
+          >
+            <i class="bx bx-search-alt-2"></i>
+          </button>
+
+          <a class="icon-btn" href="Registration.php" aria-label="Account"><i class="bx bx-user"></i></a>
         </div>
-        <!--search box-->
-        <div class="search-box">
-            <input type="search" placeholder="Search Here....">
+      </div>
+
+      <!-- Search -->
+      <div class="search-wrap" id="search-box" role="region" aria-label="Search">
+        <div class="container">
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input type="search" placeholder="Search handcrafted items..." />
+            <button class="icon-btn" id="search-close" type="button" aria-label="Close search">
+              <i class="bx bx-x"></i>
+            </button>
+          </div>
         </div>
-
-
-
+      </div>
     </header>
-    <!--home-->
+
+    <!-- Home -->
     <section class="home" id="home">
+      <div class="container home-grid">
         <div class="home-text">
-            <h1>Beautify your home <br>with handicraft</h1>
-            <p>Welcome to a world of handmade beauty.Our handcrafted designs showcase skilled artisans and cultural
-                heritage.Make your home a beautiful and precious place by using handicrafts.</p>
-            <a href="#" class="btn">Shop Now</a>
+          <p class="pill"><i class="bx bxs-leaf"></i> Handmade • Authentic • Sri Lanka</p>
+
+          <h1>
+            Beautify your home <br />
+            <span>with handicraft</span>
+          </h1>
+
+          <p class="lead">
+            Discover calm, crafted pieces made by skilled artisans. Bring warmth and culture into your space with
+            timeless handmade designs.
+          </p>
+
+          <div class="cta-row">
+            <a href="#products" class="btn btn-primary">Explore Collections</a>
+            <a href="#about" class="btn btn-ghost">Our Story</a>
+          </div>
+
+          <div class="mini-stats" aria-label="Highlights">
+            <div class="stat">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Collections</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Secure</div>
+              <div class="stat-label">Checkout</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Careful</div>
+              <div class="stat-label">Packaging</div>
+            </div>
+          </div>
         </div>
-        <div class="home-img">
-            <img src="Animpic.png" alt="">
+
+        <div class="home-img" aria-hidden="true">
+          <img src="Animpic.png" alt="" />
         </div>
+      </div>
     </section>
-    <!--about-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="historypic.jpg" alt="">
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div class="media-card">
+          <img src="historypic.jpg" alt="Handicraft history" />
         </div>
+
         <div class="about-text">
-            <h2>Our Histoty</h2>
-            <p>We aim to develop a comprehensive e-commerce platform for selling handicraft products. Handicrafts have
-                immense cultural and artistic value. By harnessing the power of technology and e-commerce, we aim to
-                empower people to preserve traditional crafts and generate sustainable income from artists' creativity.
-            </p>
-            <p>Through this website, I hope to bring artists and enthusiasts together to preserve craft, creativity and
-                cultural heritage. By creating meaningful connections between producers and consumers, we hope to create
-                a new appreciation for craft and support the artists who bring it to life.</p>
-            <a href="#" class="btn">Learn More</a>
+          <p class="kicker">OUR HISTORY</p>
+          <h2>Crafted with care, rooted in culture.</h2>
+          <p>
+            We aim to develop a comprehensive e-commerce platform for selling handicraft products. Handicrafts have
+            immense cultural and artistic value. Through technology and e-commerce, we help preserve traditional crafts
+            and support sustainable income for artisans.
+          </p>
+          <p>
+            By connecting creators and customers, we build appreciation for handmade work—supporting the artists who
+            bring beauty to life.
+          </p>
+          <a href="#products" class="btn btn-primary">Browse Categories</a>
         </div>
+      </div>
     </section>
-    <!--products-->
-    <section class="products" id="products">
-        <div class="heading">
-            <h2>Categories</h2>
 
+    <!-- Products -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="heading">
+          <p class="kicker">CATEGORIES</p>
+          <h2>Browse handcrafted collections</h2>
+          <p class="sub">Find something calm, warm, and meaningful.</p>
         </div>
-        <!--container-->
+
         <div class="product-container">
+          <a class="box" href="./categoryIndex/traditional.html" aria-label="Traditional Crafts">
+            <div class="thumb">
+              <img src="mask.jpg" alt="Traditional Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Traditional Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
 
-            <a class="box" href="./categoryIndex/traditional.html">
-                <img src="mask.jpg" alt="">
-                <h3>Traditional Crafts</h3>
-            </a>
+          <a class="box" href="./categoryIndex/wooden_products.php" aria-label="Wood Crafts">
+            <div class="thumb">
+              <img src="wood cato.jpeg" alt="Wood Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Wood Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
 
-            <a class="box" href="./categoryIndex/wooden_products.php">
-                <img src="wood cato.jpeg" alt="">
-                <h3>Wood Crafts</h3>
-            </a>
+          <a class="box" href="./categoryIndex/ceramic.html" aria-label="Ceramic Crafts">
+            <div class="thumb">
+              <img src="ceramic.jpg" alt="Ceramic Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Ceramic Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
 
-            <a class="box" href="./categoryIndex/ceramic.html">
-                <img src="ceramic.jpg" alt="">
-                <h3>Ceramic Crafts</h3>
-            </a>
+          <a class="box" href="./categoryIndex/baanstraw.html" aria-label="Baanstraw Crafts">
+            <div class="thumb">
+              <img src="baanstraw cato.jpeg" alt="Baanstraw Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Baanstraw Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
 
-            <a class="box" href="./categoryIndex/baanstraw.html">
-                <img src="baanstraw cato.jpeg" alt="">
-                <h3>Baanstraw Crafts</h3>
-            </a>
+          <a class="box" href="./categoryIndex/glass.html" aria-label="Glass Crafts">
+            <div class="thumb">
+              <img src="img00.jpeg" alt="Glass Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Glass Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
 
-            <a class="box" href="./categoryIndex/glass.html">
-                <img src="img00.jpeg" alt="">
-                <h3>Glass Crafts</h3>
-            </a>
-
-            <a class="box" href="./categoryIndex/textile.html">
-                <img src="textile cato.jpeg" alt="">
-                <h3>Textile Crafts</h3>
-            </a>
-
+          <a class="box" href="./categoryIndex/textile.html" aria-label="Textile Crafts">
+            <div class="thumb">
+              <img src="textile cato.jpeg" alt="Textile Crafts" />
+            </div>
+            <div class="box-body">
+              <h3>Textile Crafts</h3>
+              <span class="box-hint">Explore</span>
+            </div>
+            <span class="box-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+          </a>
         </div>
+      </div>
     </section>
 
-
-    <!--Coustomers-->
-    <section class="customer" id="customer">
+    <!-- Customers -->
+    <section class="section customer" id="customer">
+      <div class="container">
         <div class="heading">
-            <h2>Our customer's</h2><br>
+          <p class="kicker">TESTIMONIALS</p>
+          <h2>Our Customers</h2>
+          <p class="sub">Real feedback from real people.</p>
         </div>
-        <!--container-->
+
         <div class="coustomers-container">
-            <div class="box">
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <p>I personally loved the services of Handicraft Portal. They have high quality product and send similar
-                    item as displayed in their website.</p>
-                <h2>Ridmi De Silva</h2>
-                <img src="person1.jpeg" alt="">
+          <article class="review">
+            <div class="stars" aria-label="5 stars">
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+              ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
             </div>
+            <p>
+              I personally loved the services of Handicraft Portal. They have high quality products and send similar
+              items as displayed on the website.
+            </p>
+            <div class="reviewer">
+              <img src="person1.jpeg" alt="Ridmi De Silva" />
+              <div>
+                <h3>Ridmi De Silva</h3>
+                <span>Customer</span>
+              </div>
+            </div>
+          </article>
 
-            <div class="box">
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <p>If u are looking for unique handicraft products, then trust me nothing can be much better than elite.
-                    They have awesome collection. i love their ceramic section the most. Every design is unmatched with
-                    perfect finish.</p>
-                <h2>Shashi Kaveesha</h2>
-                <img src="person2.jpeg" alt="">
+          <article class="review">
+            <div class="stars" aria-label="5 stars">
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+              ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
             </div>
+            <p>
+              Beautiful collection! Their ceramic section is unmatched with a perfect finish. Everything feels premium
+              and carefully packed.
+            </p>
+            <div class="reviewer">
+              <img src="person2.jpeg" alt="Shashi Kaveesha" />
+              <div>
+                <h3>Shashi Kaveesha</h3>
+                <span>Customer</span>
+              </div>
+            </div>
+          </article>
 
-            <div class="box">
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <p>The site is very good and their offers are more attractive on various different occasion... I love to
-                    shop here... thanks</p>
-                <h2>Priyani Pushpa</h2>
-                <img src="person3.jpeg" alt="">
+          <article class="review">
+            <div class="stars" aria-label="5 stars">
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+              ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
             </div>
+            <p>
+              The site is very good and the offers are attractive on different occasions. I love to shop here—thank you!
+            </p>
+            <div class="reviewer">
+              <img src="person3.jpeg" alt="Priyani Pushpa" />
+              <div>
+                <h3>Priyani Pushpa</h3>
+                <span>Customer</span>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!--Footer SECtion-->
-    <section class="footer">
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="container footer-grid">
         <div class="footer-box">
-            <h3>Handicraft Portal</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis iure illo quia error? Deserunt
-                ab facilis iure fugiat consequatur incidunt sed earum recusandae? Sint veritatis perspiciatis laudantium
-                magni consectetur.</p>
-
-            <div class="social">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-tiktok'></i></a>
-            </div>
+          <h3>Handicraft Portal</h3>
+          <p>Handmade products with cultural value—supporting artisans and traditional crafts through modern shopping.</p>
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+          </div>
         </div>
 
         <div class="footer-box">
-            <h3>Support</h3>
+          <h3>Support</h3>
+          <ul>
             <li><a href="#">Products</a></li>
             <li><a href="#">Help & Support</a></li>
             <li><a href="#">Return Policy</a></li>
             <li><a href="#">Terms Of Use</a></li>
-            <li><a href="#">Products</a></li>
+          </ul>
         </div>
 
         <div class="footer-box">
-            <h3>View Guides</h3>
+          <h3>View Guides</h3>
+          <ul>
             <li><a href="#">Features</a></li>
             <li><a href="#">Careers</a></li>
+          </ul>
         </div>
 
         <div class="footer-box">
-            <h3>Contact</h3>
-            <div class="contact">
-                <span><i class='bx bx-map'></i>No:388,Kudagodagama,Kosgoda</span>
-                <span><i class='bx bxs-phone-call'></i>+94705084100</span>
-                <span><i class='bx bx-envelope'></i>handicraftportal@gmail.com</span>
-            </div>
+          <h3>Contact</h3>
+          <div class="contact">
+            <span><i class="bx bx-map"></i>No:388, Kudagodagama, Kosgoda</span>
+            <span><i class="bx bxs-phone-call"></i>+94 70 508 4100</span>
+            <span><i class="bx bx-envelope"></i>handicraftportal@gmail.com</span>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Handicraft Portal</span>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
